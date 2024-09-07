@@ -1,7 +1,7 @@
 Availability restriction by Message preferences setting in user profile
 ========================
 
-Moodle availability plugin which lets users restrict resources, activities and sections based on enrolment methods
+Moodle availability plugin which lets users restrict resources, activities and sections based on Message preferences such as Mobile / Jabber / Web / Telegram or ...
 
 
 Requirements
