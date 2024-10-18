@@ -58,8 +58,6 @@ class condition extends \core_availability\condition {
 
     public function save() {
         $result = (object)array('type' => 'message');
-        $filename = __DIR__ . "/save.txt";
-		// file_put_contents($filename, "this = ".print_r($this, true)."\n", FILE_APPEND);
 		
 
         return $result;
@@ -127,16 +125,13 @@ class condition extends \core_availability\condition {
      * @return string[]
      */
     public static function get_standard_message_fields(): array {
-        $filename = __DIR__ . "/get_standard_message_fields.txt";
 		$pluginmanager = \core_plugin_manager::instance();
         $enabled = $pluginmanager->get_enabled_plugins('message');
-		// file_put_contents($filename, "enabled = ".print_r($enabled, true)."\n", FILE_APPEND);
 
 		$result = array();
 		
 		foreach ($enabled as $plugin => $info)
 		{
-			// file_put_contents($filename, "plugin ( $plugin )= ".print_r(get_string('pluginname', "message_$plugin"), true)."\n", FILE_APPEND);
 			$result[$plugin] = get_string('pluginname', "message_$plugin");
 		}
 		return $result;
