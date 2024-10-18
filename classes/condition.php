@@ -106,7 +106,7 @@ class condition extends \core_availability\condition {
 
     public function get_description($full, $not, \core_availability\info $info) {
         $course = $info->get_course();
-		global $USER;
+		global $USER, $CFG;
         // Display the fieldname into current lang.
         $a = new \stdClass();
         // Not safe to call format_string here; use the special function to call it later.
@@ -117,7 +117,7 @@ class condition extends \core_availability\condition {
             // identifier which is only used for this lang string.
             
         }
-        return get_string('requires_message', 'availability_message', array('message' => $this->message, 'userid' => $USER->id));
+        return get_string('requires_message', 'availability_message', array('wwwroot' => $CFG->wwwroot, 'message' => $this->message, 'userid' => $USER->id));
     }
 
 

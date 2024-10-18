@@ -21,7 +21,7 @@
  * @copyright 2024 Lmskaran.com
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-global $CFG;
+
 $string['conditiontitle'] = 'User message field';
 $string['description'] = 'Control access based on fields within the student\'s message.';
 $string['error_selectfield'] = 'You must select a message field.';
@@ -29,7 +29,7 @@ $string['error_setvalue'] = 'You must type a value.';
 $string['label_operator'] = 'Method of comparison';
 $string['label_value'] = 'Value to compare against';
 $string['pluginname'] = 'Restriction by message';
-$string['requires_message'] = 'You should set <strong>{$a->message}</strong> in your <strong><a href="'.$CFG->wwwroot.'/message/edit.php?id={$a->userid}">Message preferences</a></strong>';
+$string['requires_message'] = 'You should set <strong>{$a->message}</strong> in your <strong><a href="{$a->wwwroot}/message/edit.php?id={$a->userid}">Message preferences</a></strong>';
 
 $string['missing'] = '(Missing field: {$a})';
 $string['title'] = 'User message';
