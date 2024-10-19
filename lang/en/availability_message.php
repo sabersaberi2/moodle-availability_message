@@ -34,3 +34,11 @@ $string['requires_message'] = 'You should set <strong>{$a->message}</strong> in 
 $string['missing'] = '(Missing field: {$a})';
 $string['title'] = 'User message';
 $string['privacy:metadata'] = 'The Restriction by message plugin does not store any personal data.';
+$string['op_contains'] = 'Contains';
+$string['op_doesnotcontain'] = 'Doesn\'t Contains';
+$string['op_endswith'] = 'Ends with';
+$string['op_startswith'] = 'Starts with';
+$string['op_isempty'] = 'Is empty';
+$string['op_isequalto'] = 'Is equal to';
+$string['op_isnotempty'] = 'Is not empty';
+
