@@ -85,7 +85,7 @@ class condition extends \core_availability\condition {
 		global $DB;
         $allow = false;
 		$table = 'user_preferences';
-		$row = $DB->get_record($table, array('userid' => $userid, 'name' => 'message_provider_moodle_instantmessage_enabled'));
+		$row = get_user_preferences('message_provider_moodle_instantmessage_enabled', '', $userid);
 		if($row)
 		{
 			$value = $row->value;
